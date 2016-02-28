@@ -1,0 +1,138 @@
+﻿@model AirTrade.DataCenter.Models.StockBasic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StockBasic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.industry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.industry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.area)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.area)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.outstanding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.outstanding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalAssets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalAssets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.liquidAssets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.liquidAssets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fixedAssets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fixedAssets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reserved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reserved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reservedPerShare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reservedPerShare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.esp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.esp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bvps)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bvps)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timeToMarket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timeToMarket)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.code }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,96 @@
+﻿@model AirTrade.DataCenter.Models.StockIndex
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StockIndex</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.change)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.change)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.open)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.open)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.preclose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.preclose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.close)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.close)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.high)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.high)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.low)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.low)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.volume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.volume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

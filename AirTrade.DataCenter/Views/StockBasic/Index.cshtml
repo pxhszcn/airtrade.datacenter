@@ -1,0 +1,123 @@
+﻿@model IEnumerable<AirTrade.DataCenter.Models.StockBasic>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.industry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.outstanding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totals)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalAssets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.liquidAssets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fixedAssets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reserved)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reservedPerShare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.esp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bvps)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.timeToMarket)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.industry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.outstanding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totals)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalAssets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.liquidAssets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fixedAssets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reserved)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reservedPerShare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.esp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bvps)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.timeToMarket)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.code }) |
+            @Html.ActionLink("Details", "Details", new { id=item.code }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.code })
+        </td>
+    </tr>
+}
+
+</table>
