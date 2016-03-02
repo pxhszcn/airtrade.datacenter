@@ -214,6 +214,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StockBasicController.cs" />
     <Compile Include="Controllers\StockIndexController.cs" />
+    <Compile Include="Controllers\StockTodayAllController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +224,7 @@
     <Compile Include="Models\StockDataDbContext.cs" />
     <Compile Include="Models\StockBasic.cs" />
     <Compile Include="Models\StockIndex.cs" />
+    <Compile Include="Models\StockTodayAll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -240,6 +242,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\AirTradeDataCenterPublishLocal.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -296,6 +299,11 @@
     <Content Include="Views\StockIndex\Details.cshtml" />
     <Content Include="Views\StockIndex\Edit.cshtml" />
     <Content Include="Views\StockIndex\Index.cshtml" />
+    <Content Include="Views\StockTodayAll\Create.cshtml" />
+    <Content Include="Views\StockTodayAll\Delete.cshtml" />
+    <Content Include="Views\StockTodayAll\Details.cshtml" />
+    <Content Include="Views\StockTodayAll\Edit.cshtml" />
+    <Content Include="Views\StockTodayAll\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

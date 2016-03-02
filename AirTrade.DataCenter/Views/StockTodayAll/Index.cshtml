@@ -1,0 +1,120 @@
+﻿@model IEnumerable<AirTrade.DataCenter.Models.StockTodayAll>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<p>
+    上涨个数：@ViewBag.TotalRiseCount
+</p>
+
+<p>
+    下跌个数：@ViewBag.TotalFallCount
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.changepercent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.trade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.open)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.high)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.low)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.settlement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.volume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.turnoverratio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.per)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mktcap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nmc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.changepercent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.trade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.open)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.high)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.low)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.settlement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.volume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.turnoverratio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.per)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mktcap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nmc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.code }) |
+            @Html.ActionLink("Details", "Details", new { id=item.code }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.code })
+        </td>
+    </tr>
+}
+
+</table>

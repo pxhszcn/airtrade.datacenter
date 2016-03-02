@@ -1,0 +1,130 @@
+﻿@model AirTrade.DataCenter.Models.StockTodayAll
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StockTodayAll</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.changepercent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.changepercent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.open)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.open)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.high)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.high)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.low)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.low)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.settlement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.settlement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.volume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.volume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.turnoverratio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.turnoverratio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.per)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.per)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mktcap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mktcap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nmc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nmc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.code }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

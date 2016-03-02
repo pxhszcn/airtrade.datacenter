@@ -14,5 +14,6 @@ namespace AirTrade.DataCenter.Models
 
         public virtual DbSet<StockBasic> stock_basic { get; set; }
         public virtual DbSet<StockIndex> stock_index { get; set; }
+        public virtual DbSet<StockTodayAll> stock_today_all { get; set; }
     }
 }
