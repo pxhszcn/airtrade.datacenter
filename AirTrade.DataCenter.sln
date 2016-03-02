@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTrade.DataCenter", "AirT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTrade.DataCenter.Tests", "AirTrade.DataCenter.Tests\AirTrade.DataCenter.Tests.csproj", "{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{0B653CEB-76AE-4CD0-AD52-B331875F88A8}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\mytushare.py = scripts\mytushare.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
