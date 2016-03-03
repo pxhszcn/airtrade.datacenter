@@ -33,4 +33,4 @@ def timming_exe(fun, inc = 60):
 
 def start_getting_data():
     get_today_all()
-    timming_exe(get_today_all, 30)
+    timming_exe(get_today_all, 60)
