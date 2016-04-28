@@ -1,32 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTrade.DataCenter", "AirTrade.DataCenter\AirTrade.DataCenter.csproj", "{F09AC0FC-2F2C-45F9-9ED3-6E8AFFB1A89E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTrade.DataCenter.Tests", "AirTrade.DataCenter.Tests\AirTrade.DataCenter.Tests.csproj", "{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{0B653CEB-76AE-4CD0-AD52-B331875F88A8}"
-	ProjectSection(SolutionItems) = preProject
-		scripts\mytushare.py = scripts\mytushare.py
-	EndProjectSection
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F09AC0FC-2F2C-45F9-9ED3-6E8AFFB1A89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F09AC0FC-2F2C-45F9-9ED3-6E8AFFB1A89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F09AC0FC-2F2C-45F9-9ED3-6E8AFFB1A89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F09AC0FC-2F2C-45F9-9ED3-6E8AFFB1A89E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EE71A01-8A3E-4ACC-B2AB-0CBFA2BE2B23}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
